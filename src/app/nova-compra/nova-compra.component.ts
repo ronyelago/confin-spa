@@ -15,7 +15,7 @@ export class NovaCompraComponent {
   @Input() novaCompra: NovaCompraModel = new NovaCompraModel;
 
   postNovaCompra() {
-    //consumir servico
+    //consumir servico, bro
   }
 
 }
