@@ -20,7 +20,7 @@ export class NovaCompraComponent {
   dataCompra!: NgbDate;
 
   postNovaCompra() {
-    //consumir servico, bro
+    
   }
 
 }
