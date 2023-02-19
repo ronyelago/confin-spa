@@ -1,1 +1,44 @@
-<p>nova-compra works!</p>
+<div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 w-50 bd-highlight">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Descricao</span>
+            <input type="text" class="form-control" [(ngModel)]="novaCompra.Descricao">
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 w-50 bd-highlight">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Valor</span>
+            <input type="number" class="form-control" [(ngModel)]="novaCompra.Valor">
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 w-50 bd-highlight">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Forma de Pagamento</span>
+            <input type="text" class="form-control" [(ngModel)]="novaCompra.FormaPagamento">
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row bd-highlight mb-3">
+    <div class="p-2 w-50 bd-highlight">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Data da Compra</span>
+            <input
+				class="form-control"
+				placeholder="dd-mm-yyyy"
+				name="dp"
+				[(ngModel)]="dataCompra"
+				ngbDatepicker
+				#d="ngbDatepicker"
+			/>
+			<button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+
+        </div>
+    </div>
+</div>
+<button type="button" (click)="postNovaCompra()" class="btn btn-primary">
+    Salvar
+</button>

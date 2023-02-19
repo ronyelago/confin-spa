@@ -13,8 +13,7 @@ export class NovaCompraComponent {
 
   constructor(private service: ConfinService, private router: Router) {}
 
-  @Input() 
-  novaCompra: NovaCompraModel = new NovaCompraModel;
+  @Input() novaCompra: NovaCompraModel = new NovaCompraModel;
   
   @Input() 
   dataCompra!: NgbDate;
