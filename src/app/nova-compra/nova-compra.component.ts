@@ -20,7 +20,11 @@ export class NovaCompraComponent {
   dataCompra!: NgbDate;
 
   postNovaCompra() {
-    
+    this.novaCompra.DataCompra = new Date(this.dataCompra.year, this.dataCompra.month, this.dataCompra.day);
+    this.service.novaCompra(this.novaCompra).subscribe(res => {
+      // this.router.navigate('/');
+      console.log('=> compra postada!');
+    });
   }
 
 }
